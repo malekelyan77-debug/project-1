@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+</head>
+<body>
+  <h1>User Registration</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Account Details</legend>
+
+      <p>
+        <label for="fullname">Full Name</label><br>
+        <input type="text" id="fullname" name="fullname" required minlength="3" autocomplete="name">
+      </p>
+
+      <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </p>
+
+      <p>
+        <label for="password">Password (at least 8 characters capital and small letter an symbols)</label><br>
+        <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>About You</legend>
+
+      <fieldset>
+        <legend>Experience Level</legend>
+        <input type="radio" id="level-beginner" name="level" value="beginner" required>
+        <label for="level-beginner">Beginner</label>
+
+        <input type="radio" id="level-intermediate" name="level" value="intermediate">
+        <label for="level-intermediate">Intermediate</label>
+
+        <input type="radio" id="level-advanced" name="level" value="advanced">
+        <label for="level-advanced">Advanced</label>
+      </fieldset>
+
+      <p>
+        <label for="country">Country</label><br>
+        <select id="country" name="country" required>
+          <option value="">-- Select a country --</option>
+          <option value="jo">Jordan</option>
+          <option value="sa">Saudi Arabia</option>
+          <option value="eg">Egypt</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="message">Why do you want to join?</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required minlength="10"></textarea>
+      </p>
+    </fieldset>
+
+    <p>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to the terms and conditions</label>
+    </p>
+
+    <button type="submit">Register</button>
+
+  </form>
+</body>
+</html>
